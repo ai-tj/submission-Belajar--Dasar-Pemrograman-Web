@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+   
+  h2,
+  h3 {
+    color: #000000;
+    font-size: 1.5rem; 
+  }
+   
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #026f21;
+    text-align: center;
+    font-weight: bold;
+  }
+   
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+   
+  nav a:hover {
+    font-weight: bold;
+  }
+   
+  .profile  header {
+    text-align: center;
+  }
+
+  .featured image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .profile img {
+    width: 200px;
+  }
+
+  img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .jumbotron {
+    font-size: 1.25rem;
+    padding: 25px;
+    background-color: #026f21;
+    text-align: center;
+    color: white;
+  }
+
+  nav {
+    background-color: #024415;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    margin: 0 20px;
+  }
+
+  main {
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  #content {
+    float: left;
+    width: 75%;
+    flex: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    flex: 1;
+  }
+
+  header {
+    display: inline;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+    img{
+      width: 100px;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+    main {
+      flex-direction: column;
+    }
+  }
+  
